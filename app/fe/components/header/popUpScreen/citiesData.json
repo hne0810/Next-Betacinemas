@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Hà Nội",
+        "locations": ["Beta Thanh Xuân", "Beta Mỹ Đình", "Beta Đan Phượng", "Beta Giải Phóng"]
+    },
+    {
+        "id": 2,
+        "name": "TP.Hồ Chí Minh",
+        "locations": ["Beta Quang Trung", "Beta Trần Quang Khải", "Beta Ung Văn Khiêm"]
+    }, 
+    {
+        "id": 3,
+        "name": "Bắc Giang",
+        "locations": ["Beta Bắc Giang"]
+    },
+    {
+        "id": 4,
+        "name": "Đồng Nai",
+        "locations": ["Beta Biên Hòa", "Beta Long Khánh"]
+    },
+    {
+        "id": 5,
+        "name": "Khánh Hòa",
+        "locations": ["Beta Nha Trang"]
+    },
+    {
+        "id": 6,
+        "name": "Thái Nguyên",
+        "locations": ["Beta Thái Nguyên"]
+    },
+    {
+        "id": 7,
+        "name": "Thanh Hóa",
+        "locations": ["Beta Thanh Hóa"]
+    },
+    {
+        "id": 8,
+        "name": "Vĩnh Phúc",
+        "locations": ["Beta Vĩnh Yên"]
+    },
+    {
+        "id": 9,
+        "name": "Bà Rịa-Vũng Tàu",
+        "locations": ["Beta Hồ Tràm"]
+    },
+    {
+        "id": 10,
+        "name": "Bình Dương",
+        "locations": ["Beta Empire Bình Dương", "Beta Tân Uyên"]
+    },
+    {
+        "id": 11,
+        "name": "Kiên Giang",
+        "locations": ["Beta TRMall Phú Quốc"]
+    },
+    {
+        "id": 12,
+        "name": "Lào Cai",
+        "locations": ["Beta Lào Cai"]
+    }
+]
