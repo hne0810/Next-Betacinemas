@@ -3,8 +3,9 @@
 import { imgApp } from '@/constant/img';
 import Image from 'next/image';
 import React, { useState} from 'react'
-// import HeaderLeft from  './headerLeft'
-// import HeaderRight from './headerRight'
+import HeaderLeft from  './headerLeft'
+import HeaderRight from './headerRight'
+import HeaderMid from './headerMid'
 
 
 const Header = () => {
@@ -36,7 +37,17 @@ const Header = () => {
           </button>
         </div>
       </div>
-      {/* <HeaderLeft /> */}
+      <div className='flex flex-row shadow-md'>
+        <div className='flex justify-end flex-0.5'>
+          <HeaderLeft />
+        </div>
+        <div className='flex flex-0.5'>
+          <HeaderMid />
+        </div>
+        <div className='flex flex-1'>
+          <HeaderRight />
+        </div>
+      </div>
     </div>
   )
 }

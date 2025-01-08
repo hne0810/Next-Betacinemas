@@ -1,10 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
+import { imgApp } from '../../../../../../../constant/img'
 
 const HeaderLeft = () => {
   return (
-    <div >
-      
-    </div>
+    <>
+      <Image
+        src={imgApp.logo}
+        alt=''
+        className='w-[140px] h-[90px]' />
+    </>
   )
 }
 
