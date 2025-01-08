@@ -41,7 +41,7 @@ const Header = () => {
         <div className='flex justify-end flex-0.5'>
           <HeaderLeft />
         </div>
-        <div className='flex flex-0.5'>
+        <div className='flex'>
           <HeaderMid />
         </div>
         <div className='flex flex-1'>
