@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      flex: {
+        '0.5': '0.5',
+      }
     },
   },
   plugins: [],
