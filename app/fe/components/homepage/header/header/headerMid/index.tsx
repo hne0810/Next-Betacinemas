@@ -18,21 +18,22 @@ const HeaderMid = () => {
   };
 
   return (
-    <div className=''>
+    <div className='grid place-items-center'>
       <select 
         onChange={handleCityChange} value={selectedCity}
-        className='border-solid' >
-        <option value="" disabled>Select a city</option>
-        {citiesData.map(city => (
-          <option key={city.id} value={city.id}>
+        className='ml-[20px] text-slate-800 font-sans font-semibold text-center' >  
+          {citiesData.map(city => (
+        <option key={city.id} value={city.id}>
             {city.name}
           </option>
         ))}
       </select>
 
       {locations.length > 0 && (
-        <select onChange={(e) => setSelectedLocation(e.target.value)} value={selectedLocation}>
-          <option value="" disabled>Select a location</option>
+        <select 
+          onChange={(e) => setSelectedLocation(e.target.value)} 
+          value={selectedLocation}
+          className='ml-[20px] text-slate-800 font-sans font-semibold text-center'>
           {locations.map((location, index) => (
             <option key={index} value={location}>
               {location}
