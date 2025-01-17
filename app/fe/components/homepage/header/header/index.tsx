@@ -6,6 +6,7 @@ import React, { useState} from 'react'
 import HeaderLeft from  './headerLeft'
 import HeaderRight from './headerRight'
 import HeaderMid from './headerMid'
+import Link from 'next/link';
 
 
 const Header = () => {
@@ -18,10 +19,12 @@ const Header = () => {
     <div>
       <div className='w-screen bg-black h-[18px] '>
         <div className='flex flex-row justify-end mr-[120px]'>
+        <Link href='../../../authenticationPage/login'>
           <button 
             className='boder-none text-align-center text-[13px] flex space-x-px '>
               {language === 'vi' ? 'Đăng nhập' : 'Login'}
           </button>
+        </Link>
           <span className='mx-2 text-align-center text-[13px]'>|</span>
           <button 
             className='boder-none text-align-center text-[13px] flex space-x-px mr-[15px]'>
