@@ -7,29 +7,35 @@ import HeaderLeft from  './headerLeft'
 import HeaderRight from './headerRight'
 import HeaderMid from './headerMid'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation'
 
 
 const Header = () => {
   const [language, setLanguage] = useState('vi'); // 'vi' for Vietnamese, 'en' for English
 
+  const router = useRouter()
+
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === 'vi' ? 'en' : 'vi'));
   };
   return (
-    <div>
+    <header>
       <div className='w-screen bg-black h-[18px] '>
         <div className='flex flex-row justify-end mr-[120px]'>
-        <Link href='../../../authenticationPage/login'>
+        {/* <Link href='/login' passHref> */}
           <button 
+            onClick={() => router.push('/authenticationPage/login')}
             className='boder-none text-align-center text-[13px] flex space-x-px '>
               {language === 'vi' ? 'Đăng nhập' : 'Login'}
           </button>
-        </Link>
+        {/* </Link> */}
           <span className='mx-2 text-align-center text-[13px]'>|</span>
-          <button 
-            className='boder-none text-align-center text-[13px] flex space-x-px mr-[15px]'>
-              {language === 'vi' ? 'Đăng ký' : 'Register'}
-          </button>
+          <Link href='/authenticationPage/register'>
+            <button 
+              className='boder-none text-align-center text-[13px] flex space-x-px mr-[15px]'>
+                {language === 'vi' ? 'Đăng ký' : 'Register'}
+            </button>
+          </Link>
           <button 
             className='boder-none flex space-x-px flex'
             onClick={toggleLanguage}>
@@ -51,7 +57,7 @@ const Header = () => {
           <HeaderRight />
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 
