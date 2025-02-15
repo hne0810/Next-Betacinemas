@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { imgApp } from '../../../../../../constant/img';
+import { imgApp } from '../../../../../constant/img';
 
 const HeaderLeft = () => {
   return (

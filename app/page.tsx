@@ -1,7 +1,9 @@
-import PopupScreen from './pages/homepage/header/popUpScreen/popUpScreens';
-import HomePage from './pages/homepage';
+import PopupScreen from './homepage/header/popUpScreen/popUpScreens';
+import HomePage from './homepage';
 // import LoginPage from './fe/pages/authenticationPage/login';
-export default function Page() {
+
+export default async function Page() {
+
   return (
     <div >
        <HomePage popup={<PopupScreen />} />
