@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from '../pages/homepage';
 import Link from 'next/link';
-// import Link from 'next/link';
+import NumberCaptcha from '@/components/capcha';
 
 const LoginPage = () => {
   return (
@@ -26,6 +26,7 @@ const LoginPage = () => {
             className='block mt-[20px] text-colorLink hover:underline '>
               Quên mật khẩu  
           </Link>
+          <NumberCaptcha />
         </div>
       </div>
     </div>
