@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        colorLink: "#337ab7"
       },
       flex: {
         '0.5': '0.5',
